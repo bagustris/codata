@@ -7,7 +7,7 @@
  - 20' approximately. A brief hands on intro to `git`. It is important that the audience has a felling of what `git` actually is before the frontal lecture. 
    - [Initialise](https://github.com/bagustris/git-short/blob/master/basic_git/initialize.md).
  - 20' approximately. 
-   - [Git presentation] (https://github.com/bagustris/git-short/blob/master/basic_git/basic_git_frontal_short.pdf)
+   - [Git presentation](https://github.com/bagustris/git-short/blob/master/basic_git/basic_git_frontal_short.pdf)
  - 80' approximately. Git tutorial:
    - [Branching](https://github.com/bagustris/git-short/blob/master/basic_git/branching.md)
    - [Merging](https://github.com/bagustris/git-short/blob/master/basic_git/merging.md)
