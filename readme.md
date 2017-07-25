@@ -2,7 +2,7 @@
 
 ## Program
 
-### Day 1
+### Time Estimation
 
  - 20' approximately. A brief hands on intro to `git`. It is important that the audience has a felling of what `git` actually is before the frontal lecture. 
    - [Git presentation](https://github.com/bagustris/git-short/blob/master/basic_git/basic_git_frontal_short.pdf)
