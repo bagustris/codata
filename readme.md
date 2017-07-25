@@ -16,3 +16,6 @@
    - [Collaborative work demonstration](https://github.com/nicolacavallini/codata/tree/master/collaborative_git). 
  - 120' Collaborative work exercise
    - The students pair 2 by 2 and develop the collaborative project.
+   
+## Referensi
+ - [Scipy 2015 Git tutorial](https://www.youtube.com/watch?v=hKFNPxxkbO0)
