@@ -20,3 +20,4 @@
    
 ## Referensi
  - [Scipy 2015 Git tutorial](https://www.youtube.com/watch?v=hKFNPxxkbO0)
+ - Versi panjang [Tutorial Git](https://bagustris.github.io/git-tutorial/)
