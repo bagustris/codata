@@ -138,3 +138,11 @@ Now you believe that your dirty work is good enought to be shared with the commu
 
 ![alt text](./pics/pull_request.png)
 ![alt text](./pics/network.png)
+
+## Resume:
+- git remote
+- git clone
+- git push
+- git pull
+- git merge
+- git fetch
