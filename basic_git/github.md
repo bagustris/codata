@@ -6,6 +6,7 @@ We can define a `remote` as a version of your project, hosted at some url. Avali
 - `git://`
 - `file://`
 
+Kita akan menggunakan protokol `https` untuk kemudahan akses (karena biasanya protokol lainnya di-blok).
 We refer to the most common situation of a project hosted on GitHub, and `clone` our test repository `basic_git`.
 ```
 $ git clone https://github.com/bagustris/git-short.git
