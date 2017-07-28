@@ -1,13 +1,34 @@
 # Remote repositories.
-We can define a `remote` as a version of your project, hosted at some url. Avaliable protocols are:
+Jadi sebelumnya anda telah bekerja dengan git pada local machine, komputer anda. Sekarang kita akan menggunakan remote machine yang disediakan gratis oleh Github, Bitbucket dan provide Git lainnya. Selain protokol Git sebenarnya kita bisa menggunakan protokol remote machine lainnya sbb:
 
 - `ssh://`
 - `http[s]://`
 - `git://`
 - `file://`
 
-Kita akan menggunakan protokol `https` untuk kemudahan akses (karena biasanya protokol lainnya di-blok).
-We refer to the most common situation of a project hosted on GitHub, and `clone` our test repository `basic_git`.
+Kita akan menggunakan protokol `https` untuk kemudahan akses (karena biasanya protokol lainnya di-blok) di Github. Silahkan register akun Github jika belum punya, dan buat repository baru.  kita buat repo di Bitbucket, anggap kita sudah punya akun Bitbucket, jika belum silakan buat akun Bitbucket. Sceenshot dibawah ini adalah contoh pembuatan repo baru dengan nama coba (.git).
+
+![github_create](./pics/coba.png)
+
+Silakan isi nama repo, misalnya coba, setelah itu klik create repository, maka selanjutnya akan muncul panduan untu meng-git repo local (folder coba) di komputer kita ke repo `coba` di Github. Kembali pada folder yang telah dibuat di terminal anda, misal folder `coba`, maka kita akan coba meng-add remote dan push pada remote repository di Github. Ingat, sebelumnya anda telah meng-init, add dan commit.
+
+```
+git remote add origin https://bitbucket.org/bagustris/coba.git
+git push -u origin master
+```
+
+Karena kita sudah membuat readme.md, baris pertama pada panduan Github diatas kita skip, kita langsung menuju pada git remote dan git push. Masukkan perintah-perintah diatas pada terminal. Baris pertama adalah menambahkan (add) repo github ke git kita berikut linknya sebagai remote origin, link github dimana kita meng-host kode-kode kita. Baris terakhir adalah mem-push file-file di komputer kita ke server Github. Kita akan dimintai akun dan password git saat mem-push tersebut. Jika proses push berhasil, akan muncul notifikasi berikut di terminal, 
+
+```
+Writing objects: 100% (3/3), 231 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/bagustris/coba.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
+
+## Cloning, fetch dan merge
+Sekarang berpindahlah dari repository/direktori kerja anda ke direktori yang lain. Kita akan melakukan proses cloning repository dengan dari suatu project yang di-host di github dengan `git clone` pada repository saya yang bernama`git-short`.
 ```
 $ git clone https://github.com/bagustris/git-short.git
 Cloning into 'basic_git'...
@@ -72,7 +93,7 @@ Receiving objects: 100% (9/9), done.
 Resolving deltas: 100% (1/1), done.
 Checking connectivity... done.
 ```
-You want to link your local copy, with your remote and the ufficial remote. This is done adding the ufficial repo to your remote list:
+You want to link your local copy, with your remote and the official remote. This is done adding the official repo to your remote list:
 ```
 $ git remote add bagustris https://github.com/bagustris/git-short.git
 $ git remote -v
@@ -118,6 +139,8 @@ Total 3 (delta 1), reused 0 (delta 0)
 To git@github.com:teststudentmhpc/basic_git.git
    7a0395a..e7c0b24  master -> master
 ```
+
+# Branching
 It's your time to work, finally. A good habit is to keep the master branch *untouched* and do your dirty stuff into a local branch:
 ```
 $ git checkout -b dirty
@@ -139,8 +162,8 @@ To git@github.com:teststudentmhpc/basic_git.git
 ```
 Now you believe that your dirty work is good enought to be shared with the community, but you want it to be reviwed by the developers. What you usually do is create a *pull request*.
 
-![alt text](./pics/pull_request.png)
-![alt text](./pics/network.png)
+![pull_request](./pics/pull_request.png)
+![network](./pics/network.png)
 
 ## Resume:
 - git remote
