@@ -1,7 +1,15 @@
 # Git Short Tutorial
 
 ## Program
+Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dapat memahami secara komprehensif. Alokasi waktu yang kurang dan ketidak-serius-an dalam mengikuti workshop/tutorial ini akan menyebabkan tidak tercapainya tujuan pembelajaran.
 
+## Learning Outcome / Tujuan Pembelajaran
+ 1. Mampu menjalankan git pada console/terminal, meng-clone, dan mengkonfigurasi git.
+ 2. Mampu membuat/menginisiasi repository dan menguploadnya pada Github/Bitbucket.
+ 2. Mampu melakukan workflow git: modify-add-commit-push dari repo yang dibuat.
+ 4. Mampu meng-clone dan mem-pull dari repo git.
+ 5. Mampu bekerja dalam tim dengan git dan menyelesaikan *conflict*.
+ 
 ### Time Estimation
  - 30' setup. Instalasi Git pada Windows (Git for Windows) dan Git pada Linux/Ubuntu (sangat direkomendasikan).
 
