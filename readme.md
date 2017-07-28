@@ -1,7 +1,7 @@
 # Git Short Tutorial
 
 ## Program
-Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dapat memahami secara komprehensif. Alokasi waktu yang kurang dan ketidak-serius-an dalam mengikuti workshop/tutorial ini akan menyebabkan tidak tercapainya tujuan pembelajaran.
+Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dapat memahami secara Git komprehensif. Alokasi waktu yang kurang dan ketidak-serius-an dalam mengikuti workshop/tutorial ini akan menyebabkan tidak tercapainya tujuan pembelajaran.
 
 ## Learning Outcome / Tujuan Pembelajaran
  1. Mampu menjalankan git pada console/terminal, meng-clone, dan mengkonfigurasi git.
