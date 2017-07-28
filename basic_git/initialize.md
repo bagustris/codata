@@ -1,4 +1,6 @@
-# Version control with git
+# Version control dengan git
+
+*Let's learn English*.
 
 A version control system is a tool that keeps track of `changes` for
 us and help us version and `merge` our files. Changes are stored in a
@@ -9,7 +11,7 @@ sync across different computers.
 Git is a `distributed` version control system, meaning that they do
 not need a centralized server to host the repository.
 
-### Take home messages
+### Untuk diingat.
 
 - Nothing that is committed to version control is ever lost, unless
   you work really, really hard at it. Since all old versions of files
@@ -26,12 +28,12 @@ not need a centralized server to host the repository.
   control system automatically notifies users whenever there’s a
   conflict between one person’s work and another’s.
 
-# Initialise our project.
+# Menginisiasi project.
 Initialise the `git` repository.
 
 ```
 $ git init
-Initialized empty Git repository in /Users/nicola/mhpc_tmp/git_ex_0/.git/
+Initialized empty Git repository in /media/bagustris/atmaja/github/git-short
 ```
 
 # Git Setup
@@ -40,7 +42,8 @@ Before using git, we need to specify username and mail (GitHub account data are 
 ```
 $ git config --global user.name "YOUR NAME"
 $ git config --global user.email "YOUR EMAIL ADDRESS"
-$ git config --global core.editor "editor-name: nano, emacs, vim"
+$ git config --global core.editor "editor-name: nano OR emacs OR vim"
+
 # Here the real example:
 $ git config --global user.name "Bagus Tris Atmaja"
 $ git config --global user.email "btatmaja@gmail.com"
@@ -194,11 +197,27 @@ $ git commit -m "first commit "
 [master (root-commit) f8e26ec] first commit
  1 file changed, 3 insertions(+)
  create mode 100644 first.txt
+$ git log
 ```
-`git` is telling us that:
+
+`git` memberitahukan kepada kita tentang:
  - we are on master branch.
  - this is a special commit, the `root` one.
  - we have an identifier of our commit.
  - Standard unix permissions.
 
 ![alt text](./pics/local_areas.png)
+
+
+## Resume
+- git init
+- git config
+- git remote
+- git add
+- git commit
+- git status
+- git log
+
+## Bahan Bacaan:
+- [Pengenalan Git](http://www.bagustris.tk/2015/03/pengenalan-git.html)
+- [Setting Git Config](http://www.bagustris.tk/2015/09/pengenalan-git-setting-gitconfig.html)
