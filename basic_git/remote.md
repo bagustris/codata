@@ -173,3 +173,6 @@ Now you believe that your dirty work is good enought to be shared with the commu
 - git merge
 - git fetch
 - git branch
+
+# Bahan Bacaan
+- [Git clone, Push dan Pull](http://www.bagustris.tk/2015/04/pengenalan-git-clone-push-dan-pull.html)
