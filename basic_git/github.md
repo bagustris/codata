@@ -6,9 +6,9 @@ We can define a `remote` as a version of your project, hosted at some url. Avali
 - `git://`
 - `file://`
 
-We refer to the most common situation of a project hosted on GitHub, and `clone` our test repository `basc_git`.
+We refer to the most common situation of a project hosted on GitHub, and `clone` our test repository `basic_git`.
 ```
-$ git clone git@github.com:nicolacavallini/basic_git.git
+$ git clone https://github.com/bagustris/git-short.git
 Cloning into 'basic_git'...
 warning: You appear to have cloned an empty repository.
 Checking connectivity... done.
@@ -16,15 +16,15 @@ Checking connectivity... done.
 A good idea would be to check the romte on our local version, this is done in two ways. First:
 ```
 $ git remote -v
-origin	git@github.com:nicolacavallini/basic_git.git (fetch)
-origin	git@github.com:nicolacavallini/basic_git.git (push)
+origin	https://github.com/bagustris/git-short.git (fetch)
+origin	https://github.com/bagustris/git-short.git (push)
 ```
 Second:
 ```
 $ git remote show origin
 * remote origin
-  Fetch URL: git@github.com:nicolacavallini/basic_git.git
-  Push  URL: git@github.com:nicolacavallini/basic_git.git
+  Fetch URL: https://github.com/bagustris/git-short.git
+  Push  URL: https://github.com/bagustris/git-short.git
   HEAD branch: master
   Remote branch:
     master tracked
@@ -35,6 +35,7 @@ $ git remote show origin
 ```
 Notice that `origin` is nothing but a default name for a remote. Remote repositories are used to `push` and `pull` data. Now that we have a working copy of the projet, doing some work would be a good idea:
 ```
+# Gunakan nano jika anda belum terbiasa dengan vim
 vim first.txt
 git commit -a -m "first commit by..."
 ```
@@ -44,13 +45,14 @@ $ git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 243 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To git@github.com:nicolacavallini/basic_git.git
+To https://github.com/bagustris/git-short.git
  * [new branch]      master -> master
 ```
 Now check the GitHub web page you'll see your work has been loaded online.
+
 **Agenda sunt:** Let the lecturer push some work, and try to push yourself. What happens?
 
-#Managing Remotes and the Correct Way to Collaborate.
+# Managing Remotes and the Correct Way to Collaborate.
 Suppose now it's 30 people collaborating on the same project. It would be than a good idea to have your own remote version, together with the development remote version of the repository. Git based platforms such has GitHub, provide this feature, and they often call it *Fork*. 
 
 ![alt text](./pics/fork_0.png)
@@ -59,7 +61,7 @@ Suppose now it's 30 people collaborating on the same project. It would be than a
 
 Now that you have your own remote copy of the project you can clone it:
 ```
-$ git clone git@github.com:teststudentmhpc/basic_git.git
+$ git clone https://github.com/bagustris/git-short.git
 Cloning into 'basic_git'...
 Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
 remote: Counting objects: 9, done.
@@ -71,35 +73,35 @@ Checking connectivity... done.
 ```
 You want to link your local copy, with your remote and the ufficial remote. This is done adding the ufficial repo to your remote list:
 ```
-$ git remote add nicola git@github.com:nicolacavallini/basic_git.git
+$ git remote add bagustris https://github.com/bagustris/git-short.git
 $ git remote -v
-nicola	git@github.com:nicolacavallini/basic_git.git (fetch)
-nicola	git@github.com:nicolacavallini/basic_git.git (push)
-origin	git@github.com:teststudentmhpc/basic_git.git (fetch)
-origin	git@github.com:teststudentmhpc/basic_git.git (push)
+bagustris	https://github.com/bagustris/git-short.git (fetch)
+bagustris	https://github.com/bagustris/git-short.git(push)
+origin	https://github.com/bagustris/git-short.git (fetch)
+origin	https://github.com/bagustris/git-short.git (push)
 ```
 
 Suppose you go and get a coffe, and the developers have pushed some work into the project. It is a good idea to sync your local and remote repositories with the original one.
 ```
 $ git fetch --all 
 Fetching origin
-Fetching nicola
+Fetching bagustris
 remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (1/1), done.
 remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From github.com:nicolacavallini/basic_git
- * [new branch]      master     -> nicola/master
+From github.com/bagustris/git-short
+ * [new branch]      master     -> bagustris/master
 ```
-You want `nicola/master` branch to be merged on your local and remote copies. You need first to set your `HEAD` to `master` on local repository.
+You want `bagustris/master` branch to be merged on your local and remote copies. You need first to set your `HEAD` to `master` on local repository.
 ```
 $ git checkout master
 Already on 'master'
 Your branch is up-to-date with 'origin/master'.
 ```
-Then you want to `merge` local with `nicola/master`.
+Then you want to `merge` local with `bagustris/master`.
 ```
-$ git merge nicola/master
+$ git merge bagustris/master
 Updating 7a0395a..e7c0b24
 Fast-forward
  first.txt | 2 +-
@@ -146,3 +148,4 @@ Now you believe that your dirty work is good enought to be shared with the commu
 - git pull
 - git merge
 - git fetch
+- git branch
