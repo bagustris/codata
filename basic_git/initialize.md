@@ -199,8 +199,9 @@ $ git commit -m "first commit "
  create mode 100644 first.txt
 $ git log
 ```
+Setlah `git init` dilakukan untuk memulai mengisiasi git, workflow selanjutnya adalah `git add`. Baris pertama di atas adalah menambahkan file-file dalam current directory dan baris selanjutnya menambahkan keterangan (commit) terhadap apa yang telah kita lakukan. Untuk mengecek file yang telah ditambahkan pada repo cek dengan "git status". Karena kita baru saja meng-commit pertama kali, maka default messagenya (-m) adalah "first commit". 
 
-`git` memberitahukan kepada kita tentang:
+Output dari perintah diatas, `git` memberitahukan kepada kita tentang:
  - we are on master branch.
  - this is a special commit, the `root` one.
  - we have an identifier of our commit.
@@ -208,6 +209,11 @@ $ git log
 
 ![alt text](./pics/local_areas.png)
 
+Empat tahapan manajemen file dalam git di atas adalah sebagai berikut:
+ - Untracked: Git tidak tahu kalau file tersebut ditelusuri (tracked),
+ - Unmodified: Git tahu file tersebut, tapi tidak tahu kalau ada modifikasi.
+ - Tracked: modifikasi file ada pada git, tapi git tidak mengetahui modifikasi yang dibuat
+ - Staged: perubahan pada file ini diketahui oleh git dan akan di-commit pada commit selanjutnya.
 
 ## Resume
 - git init
