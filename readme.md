@@ -15,9 +15,10 @@ Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dap
 
  - 20' approximately. Pengantar singkat tentang `git`. Sangat penting mengetahui apa itu revision control `git` dalam bentuk kuliah sebelum mempraktekaanya. 
    - [Git presentation](https://github.com/bagustris/git-short/blob/master/basic_git/basic_git_frontal_short.pdf)
- - 20' approximately. 
+ - 40' approximately.
    - [Initialise](https://github.com/bagustris/git-short/blob/master/basic_git/initialize.md)
- - 80' approximately. Git tutorial:
+   - [Remote](https://github.com/bagustris/git-short/blob/master/basic_git/remote.md)
+ - 40' approximately.
    - [Branching](https://github.com/bagustris/git-short/blob/master/basic_git/branching.md)
    - [Merging](https://github.com/bagustris/git-short/blob/master/basic_git/merging.md)
       - Conflict and Stash are Optional
