@@ -1,7 +1,7 @@
 # Git Short Tutorial
 
 ## Program
-Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dapat memahami secara Git komprehensif. Alokasi waktu yang kurang dan ketidak-serius-an dalam mengikuti workshop/tutorial ini akan menyebabkan tidak tercapainya tujuan pembelajaran.
+Tutorial ini meskipun singkat membutuhkan waktu 4 jam (half-day workshop) untuk dapat memahami secara Git komprehensif. Alokasi waktu yang kurang dan ketidak-serius-an dalam mengikuti workshop/tutorial ini akan menyebabkan tidak tercapainya tujuan pembelajaran. Idealnya, workshop ini dilakukan setelah [shell-tutorial](https://bagustris.github.io/shell-tutorial).
 
 ## Learning Outcome / Tujuan Pembelajaran
  1. Mampu menjalankan git pada console/terminal dan mengkonfigurasi git.
@@ -22,11 +22,10 @@ Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dap
    - [Branching](https://github.com/bagustris/git-short/blob/master/basic_git/branching.md)
    - [Merging](https://github.com/bagustris/git-short/blob/master/basic_git/merging.md)
       - Conflict and Stash are Optional
- - 03.00 Collaborative git.
+ - 02.40 Collaborative git.
    - [Collaborative work demonstration](https://github.com/nicolacavallini/codata/tree/master/collaborative_git). 
- - 03.30 Collaborative work exercise
+ - 03.10 Collaborative work exercise (homework??)
    - The students pair 2 by 2 and develop the collaborative project.
- - 05.30 Finish
    
 ## Referensi
  - [Scipy 2015 Git tutorial](https://www.youtube.com/watch?v=hKFNPxxkbO0)
