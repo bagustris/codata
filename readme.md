@@ -29,4 +29,4 @@ Tutorial ini meskipun singkat membutuhkan waktu 6 jam (1-day workshop) untuk dap
    
 ## Referensi
  - [Scipy 2015 Git tutorial](https://www.youtube.com/watch?v=hKFNPxxkbO0)
- - Versi panjang [Tutorial Git](https://bagustris.github.io/git-tutorial/)
+ - Versi panjang [Tutorial Git](https://swcarpentry.github.io/git-novice/)
