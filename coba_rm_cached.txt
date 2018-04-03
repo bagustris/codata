@@ -1,0 +1,2 @@
+add test for 
+add test for git rm --chached FILE
